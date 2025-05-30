@@ -1,4 +1,358 @@
-<form id="notifyForm" class="email-form">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofélia Timeless</title>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5E4E0;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1728px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #3B4D3B;
+            padding: 12px 0; 
+            width: 100%;
+        }
+
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 100px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 35px; 
+            flex-wrap: wrap; 
+        }
+
+
+        nav a {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px; 
+            color: #EADA85;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            padding: 50px 0 20px 0;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: center; /* centraliza o conteúdo */
+            align-items: flex-start;
+            gap: 30px; /* espaçamento entre texto e imagem */
+            flex-wrap: wrap;
+            margin: 0 auto; /* centraliza horizontalmente */
+        }
+
+
+        .hero-text {
+            flex: 1;
+            max-width: 789px;
+        }
+
+        .hero-heading {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 22px; /* ↓ de 70px */
+            margin-bottom: 40px; /* ↓ de 30px */
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 14px; /* ↓ de 36px */
+            margin-bottom: 70px; /* ↓ de 40px */
+            font-weight: 300;
+        }
+
+        .hero-image {
+            flex: 0 0 auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Form Styles */
+        .email-form {
+            display: flex;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .email-input {
+            flex-grow: 0;
+            padding: 10px 15px;
+            width: 280px; 
+            font-family: 'Emilys Candy', cursive;
+            font-size: 18px;
+            background-color: #DCC6B2;
+            border: 1px solid #B0C3C1;
+            color: rgba(0, 0, 0, 0.55);
+            border-radius: 30px 0 0 30px;
+        }
+
+        .submit-button {
+            padding: 15px 20px;
+            width: 203px;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 18px;
+            background-color: #3B4D3B;
+            border: 1px solid #B0C3C1;
+            color: #DCC6B2;
+            cursor: pointer;
+            border-radius: 0 30px 30px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1728px) {
+           .container {
+                max-width: 1400px;
+            } 
+
+            .logo-image {
+                height: 55px;
+            }
+            
+            nav a {
+                font-size: 22px;
+            }
+            
+            .hero-heading {
+                font-size: 60px;
+            }
+            
+            .hero-description {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-image {
+                height: 60px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 300px;
+            }
+            
+            nav a {
+                font-size: 18px;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+                padding: 10px;
+                gap: 15px;
+            }
+            
+            .hero-text {
+                max-width: 100%;
+            }
+            
+            .hero-heading {
+                font-size: 28px;
+                text-align: center;
+            }
+            
+            .hero-description {
+                font-size: 16px;
+                text-align: center;
+            }
+            
+            .hero-image {
+                width: 100%;
+                height: auto;
+            }
+            
+            .email-form {
+                flex-direction: column;
+            }
+            
+            .email-input, .submit-button {
+                width: 100%;
+                font-size: 16px;
+            }
+
+        @media (max-width: 480px) {
+            .logo-image {
+                height: 40px; /* menor que antes */
+            }
+
+            /* Nav com links em coluna e centralizados */
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 250px; /* limita largura para centralizar */
+                align-items: center; /* centraliza os links */
+            }
+
+            nav a {
+                font-size: 18px;
+                text-align: center; /* centraliza o texto do link */
+            }
+
+            /* Hero: layout em coluna */
+            .hero-content {
+                flex-direction: column;
+                padding: 10px;
+                gap: 15px;
+                align-items: center; /* centraliza os itens */
+            }
+
+            /* Texto com largura total */
+            .hero-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            /* Cabeçalho e descrição menor e centralizados */
+            .hero-heading {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .hero-description {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            /* Imagem do produto menor */
+            .hero-image {
+                width: 200px; /* reduz largura */
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Form: input e botão menores e empilhados */
+            .email-form {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .email-input,
+            .submit-button {
+                width: 100%;
+                font-size: 16px;
+                padding: 10px 15px;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!-- LINHA 142: COLOQUE SUA IMAGEM DE LOGO AQUI -->
+                <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-heading">Your skin's future,<br>today.</h2>
+                    <p class="hero-description">
+                        Discover the future of skincare: a multifunctional electronic device that combines cleansing, massage, 
+                        biometric diagnosis and AI-powered personalized recommendations, all in one intuitive platform that 
+                        automatically adapts to your needs and prioritizes sustainability.
+                    </p>
+                    <form id="notifyForm" class="email-form">
                         <input type="email" class="email-input" placeholder="Enter your email address" required>
                         <button type="submit" class="submit-button">Get notified!</button>
                     </form>
+                </div>
+                <div class="hero-image">
+                    <img src="product.svg" alt="Ofélia Timeless Device" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript para redirecionamento -->
+    <script>
+        document.getElementById('notifyForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Impede envio padrão
+            const emailInput = document.querySelector('.email-input');
+            const email = emailInput.value.trim();
+            if (email) {
+                window.location.href = 'welcome.html';
+            } else {
+                alert('Por favor, insira um email válido.');
+            }
+        });
+    </script>
+
+</body>
+</html>
