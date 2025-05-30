@@ -1,114 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact - Ofélia Timeless</title>
-    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet" />
-    <style>
-        * {
-            margin: 0; padding: 0; box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #E5E4E0;
-            color: #000;
-            line-height: 1.6;
-        }
-        .container {
-            width: 100%;
-            max-width: 1728px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #3B4D3B;
-            padding: 12px 0;
-            width: 100%;
-        }
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .logo-image {
-            height: 100px;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 35px;
-            flex-wrap: wrap;
-        }
-        nav a {
-            font-family: 'Emilys Candy', cursive;
-            font-size: 24px;
-            color: #EADA85;
-            text-decoration: none;
-            font-weight: 400;
-        }
-        main {
-            padding: 60px 0;
-            text-align: center;
-        }
-        h2 {
-            font-family: 'Emilys Candy', cursive;
-            font-size: 36px;
-            margin-bottom: 40px;
-            color: #3B4D3B;
-        }
-        .contact-info {
-            font-family: 'Emilys Candy', cursive;
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-        .social-list {
-            list-style: none;
-            font-family: 'Emilys Candy', cursive;
-            font-size: 22px;
-            color: #3B4D3B;
-            max-width: 300px;
-            margin: 0 auto;
-            padding-left: 0;
-        }
-        .social-list li {
-            margin: 12px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Ofélia Timeless</title>
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E5E4E0;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1728px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #3B4D3B;
+      padding: 12px 0;
+      width: 100%;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-image {
+      height: 100px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-family: 'Emilys Candy', cursive;
+      font-size: 24px;
+      color: #EADA85;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Emilys Candy', cursive;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #3B4D3B;
+    }
+
+    .contact-info {
+      font-family: 'Emilys Candy', cursive;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .social-list {
+      list-style: none;
+      font-family: 'Emilys Candy', cursive;
+      font-size: 22px;
+      color: #3B4D3B;
+      max-width: 300px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+
+    .social-list li {
+      margin: 12px 0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 1728px) {
+      .logo-image {
+        height: 55px;
+      }
+
+      nav a {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-image {
+        height: 40px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 250px;
+        align-items: center;
+      }
+
+      nav a {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <a href="index.html" title="Go to homepage">
-                    <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image" />
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="events.html">Events</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <h2>Contact Us</h2>
-        <p class="contact-info">Email: info@ofeliatimeless.com</p>
-        <ul class="social-list">
-            <li>Instagram: OfeliaTimeless</li>
-            <li>Facebook: Ofelia Timeless</li>
-            <li>TikTok: ofelia_timeless_brand</li>
-            <li>LinkedIn: Ofelia Timeless</li>
-            <li>Twitter: ofelia.timeless</li>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <a href="index.html" title="Go to homepage">
+          <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="events.html">Events</a></li>
         </ul>
-    </main>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <h2>Contact Us</h2>
+    <p class="contact-info">Email: info@ofeliatimeless.com</p>
+    <ul class="social-list">
+      <li>Instagram: OfeliaTimeless</li>
+      <li>Facebook: Ofelia Timeless</li>
+      <li>TikTok: ofelia_timeless_brand</li>
+      <li>LinkedIn: Ofelia Timeless</li>
+      <li>Twitter: ofelia.timeless</li>
+    </ul>
+  </main>
 </body>
 </html>
