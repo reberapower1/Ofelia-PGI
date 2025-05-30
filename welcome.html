@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - Ofélia Timeless</title>
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E5E4E0;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1728px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #3B4D3B;
+      padding: 12px 0;
+      width: 100%;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-image {
+      height: 100px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-family: 'Emilys Candy', cursive;
+      font-size: 24px;
+      color: #EADA85;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .welcome-section {
+      padding: 80px 20px;
+      text-align: center;
+      font-family: 'Emilys Candy', cursive;
+    }
+
+    .welcome-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .welcome-section p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .explore-links a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      background-color: #3B4D3B;
+      color: #DCC6B2;
+      font-size: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .explore-links a:hover {
+      background-color: #2d3b2d;
+    }
+
+    @media (max-width: 768px) {
+      .logo-image {
+        height: 60px;
+      }
+
+      nav a {
+        font-size: 20px;
+      }
+
+      .welcome-section h1 {
+        font-size: 28px;
+      }
+
+      .welcome-section p,
+      .explore-links a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image"/>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="container">
+      <h1>Welcome!</h1>
+      <p>You’re now registered to stay updated on all the latest news from Ofélia Timeless.</p>
+      <p>Would you like to continue exploring?</p>
+      <div class="explore-links">
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
