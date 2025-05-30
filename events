@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events - Ofélia Timeless</title>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5E4E0;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1728px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #3B4D3B;
+            padding: 12px 0;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 100px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px;
+            color: #EADA85;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        nav a.active {
+            color: #A5BEB8;
+        }
+
+        .events-section {
+            padding: 60px 0;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            color: #000;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 30px;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 20px;
+            color: #3B4D3B;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1728px) {
+            .container {
+                max-width: 1400px;
+            }
+            .logo-image {
+                height: 55px;
+            }
+            nav a {
+                font-size: 22px;
+            }
+            .events-section {
+                font-size: 20px;
+                padding: 40px 20px;
+            }
+            .home-link {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-image {
+                height: 40px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 250px;
+                align-items: center;
+            }
+            nav a {
+                font-size: 18px;
+                text-align: center;
+            }
+            .events-section {
+                font-size: 16px;
+                padding: 20px 10px;
+            }
+            .home-link {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link" title="Back to homepage">
+                    <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image" />
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="events-section">
+        <p>
+            There are currently no events available. Please register to receive updates and be notified when new events are announced.
+        </p>
+        <a href="index.html" class="home-link" title="Go to homepage to register">Go to homepage to register &rarr;</a>
+    </section>
+</body>
+</html>
