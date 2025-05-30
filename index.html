@@ -45,14 +45,14 @@
         }
 
         nav {
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
-            gap: 40px; 
+            gap: 35px; 
             flex-wrap: wrap; 
         }
 
@@ -68,15 +68,18 @@
 
         /* Hero Section */
         .hero {
-            padding: 60px 0;
+            padding: 50px 0 20px 0;
         }
 
         .hero-content {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
+            justify-content: center; /* centraliza o conteúdo */
+            align-items: flex-start;
+            gap: 30px; /* espaçamento entre texto e imagem */
+            flex-wrap: wrap;
+            margin: 0 auto; /* centraliza horizontalmente */
         }
+
 
         .hero-text {
             flex: 1;
@@ -85,39 +88,43 @@
 
         .hero-heading {
             font-family: 'Emilys Candy', cursive;
-            font-size: 42px; /* ↓ de 70px */
-            margin-bottom: 20px; /* ↓ de 30px */
-            font-weight: 400;
+            font-size: 22px; /* ↓ de 70px */
+            margin-bottom: 40px; /* ↓ de 30px */
+            font-weight: 300;
             line-height: 1.2;
         }
 
-
         .hero-description {
             font-family: 'Emilys Candy', cursive;
-            font-size: 20px; /* ↓ de 36px */
-            margin-bottom: 30px; /* ↓ de 40px */
-            font-weight: 400;
+            font-size: 14px; /* ↓ de 36px */
+            margin-bottom: 70px; /* ↓ de 40px */
+            font-weight: 300;
         }
-
 
         .hero-image {
             flex: 0 0 auto;
-            width: 120px; /* ↓ de 191px */
-            height: auto; /* remove altura fixa */
-            position: relative;
+            height: auto;
+            display: flex;
+            align-items: center;
         }
 
+        .hero-image img {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
 
         /* Form Styles */
         .email-form {
             display: flex;
-            max-width: 557px;
-            margin-top: 40px;
+            max-width: 100%;
+            margin-top: 20px;
         }
 
         .email-input {
-            flex-grow: 1;
+            flex-grow: 0;
             padding: 10px 15px;
+            width: 280px; 
             font-family: 'Emilys Candy', cursive;
             font-size: 18px;
             background-color: #DCC6B2;
@@ -127,8 +134,8 @@
         }
 
         .submit-button {
-            padding: 10px 15px;
-            width: 160px;
+            padding: 15px 20px;
+            width: 203px;
             font-family: 'Emilys Candy', cursive;
             font-size: 18px;
             background-color: #3B4D3B;
@@ -244,7 +251,6 @@
                     </form>
                 </div>
                 <div class="hero-image">
-                    <!-- LINHA 179: COLOQUE SEU SVG/IMAGEM DO PRODUTO AQUI -->
                     <img src="product.svg" alt="Ofélia Timeless Device" style="width: 100%; height: auto;">
                 </div>
             </div>
