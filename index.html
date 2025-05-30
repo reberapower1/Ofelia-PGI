@@ -168,21 +168,27 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 480px) {
             .logo-image {
                 height: 60px;
             }
             
             nav ul {
-                gap: 20px;
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 300px;
             }
             
             nav a {
-                font-size: 24px;
+                font-size: 18px;
             }
             
             .hero-content {
                 flex-direction: column;
+                padding: 10px;
+                gap: 15px;
             }
             
             .hero-text {
@@ -190,16 +196,18 @@
             }
             
             .hero-heading {
-                font-size: 40px;
+                font-size: 28px;
+                text-align: center;
             }
             
             .hero-description {
-                font-size: 22px;
+                font-size: 16px;
+                text-align: center;
             }
             
             .hero-image {
-                width: 150px;
-                height: 580px;
+                width: 100%;
+                height: auto;
             }
             
             .email-form {
@@ -208,8 +216,7 @@
             
             .email-input, .submit-button {
                 width: 100%;
-                border-radius: 30px;
-                margin-bottom: 10px;
+                font-size: 16px;
             }
         }
     </style>
