@@ -29,9 +29,10 @@
         /* Header Styles */
         header {
             background-color: #3B4D3B;
-            padding: 20px 0;
+            padding: 12px 0; 
             width: 100%;
         }
+
 
         .logo-container {
             display: flex;
@@ -40,7 +41,6 @@
         }
 
         .logo-image {
-            /* Ajuste o tamanho conforme necessário */
             height: 100px;
         }
 
@@ -52,16 +52,19 @@
             display: flex;
             justify-content: center;
             list-style: none;
-            gap: 125px;
+            gap: 40px; 
+            flex-wrap: wrap; 
         }
+
 
         nav a {
             font-family: 'Emilys Candy', cursive;
-            font-size: 40px;
+            font-size: 24px; 
             color: #EADA85;
             text-decoration: none;
             font-weight: 400;
         }
+
 
         /* Hero Section */
         .hero {
@@ -133,21 +136,25 @@
         }
 
         /* Responsive Styles */
-        @media (max-width: 1200px) {
+        @media (max-width: 1728px) {
+           .container {
+                max-width: 1400px;
+            } 
+
             .logo-image {
-                height: 80px;
+                height: 55px;
             }
             
             nav a {
-                font-size: 30px;
+                font-size: 22px;
             }
             
             .hero-heading {
-                font-size: 50px;
+                font-size: 60px;
             }
             
             .hero-description {
-                font-size: 28px;
+                font-size: 30px;
             }
         }
 
