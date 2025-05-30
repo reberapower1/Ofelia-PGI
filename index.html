@@ -218,6 +218,83 @@
                 width: 100%;
                 font-size: 16px;
             }
+
+        @media (max-width: 480px) {
+            .logo-image {
+                height: 40px; /* menor que antes */
+            }
+
+            /* Nav com links em coluna e centralizados */
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 250px; /* limita largura para centralizar */
+                align-items: center; /* centraliza os links */
+            }
+
+            nav a {
+                font-size: 18px;
+                text-align: center; /* centraliza o texto do link */
+            }
+
+            /* Hero: layout em coluna */
+            .hero-content {
+                flex-direction: column;
+                padding: 10px;
+                gap: 15px;
+                align-items: center; /* centraliza os itens */
+            }
+
+            /* Texto com largura total */
+            .hero-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            /* Cabeçalho e descrição menor e centralizados */
+            .hero-heading {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .hero-description {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            /* Imagem do produto menor */
+            .hero-image {
+                width: 200px; /* reduz largura */
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Form: input e botão menores e empilhados */
+            .email-form {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .email-input,
+            .submit-button {
+                width: 100%;
+                font-size: 16px;
+                padding: 10px 15px;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
         }
     </style>
 </head>
