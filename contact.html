@@ -40,6 +40,7 @@
 
     .logo-image {
       height: 100px;
+      transition: height 0.3s ease;
     }
 
     nav {
@@ -74,93 +75,4 @@
     h2 {
       font-family: 'Emilys Candy', cursive;
       font-size: 36px;
-      margin-bottom: 40px;
-      color: #3B4D3B;
-    }
-
-    .contact-info {
-      font-family: 'Emilys Candy', cursive;
-      font-size: 24px;
-      margin-bottom: 30px;
-    }
-
-    .social-list {
-      list-style: none;
-      font-family: 'Emilys Candy', cursive;
-      font-size: 22px;
-      color: #3B4D3B;
-      max-width: 300px;
-      margin: 0 auto;
-      padding-left: 0;
-    }
-
-    .social-list li {
-      margin: 12px 0;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 1728px) {
-      .logo-image {
-        height: 55px;
-      }
-
-      nav a {
-        font-size: 22px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .logo-image {
-        height: 40px;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 15px;
-        padding: 0;
-        margin: 0 auto;
-        max-width: 250px;
-        align-items: center;
-      }
-
-      nav a {
-        font-size: 18px;
-        text-align: center;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo-container">
-        <a href="index.html" title="Go to homepage">
-          <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image" />
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-          <li><a href="events.html">Events</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main content -->
-  <main>
-    <h2>Contact Us</h2>
-    <p class="contact-info">Email: info@ofeliatimeless.com</p>
-    <ul class="social-list">
-      <li>Instagram: OfeliaTimeless</li>
-      <li>Facebook: Ofelia Timeless</li>
-      <li>TikTok: ofelia_timeless_brand</li>
-      <li>LinkedIn: Ofelia Timeless</li>
-      <li>Twitter: ofelia.timeless</li>
-    </ul>
-  </main>
-</body>
-</html>
+      margin-bottom: 40
