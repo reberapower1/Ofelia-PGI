@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About - Ofélia Timeless</title>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5E4E0;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1728px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #3B4D3B;
+            padding: 12px 0;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 100px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px;
+            color: #EADA85;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        nav a.active {
+            color: #A5BEB8;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            color: #000;
+        }
+
+        @media (max-width: 1728px) {
+            .container {
+                max-width: 1400px;
+            }
+            .logo-image {
+                height: 55px;
+            }
+            nav a {
+                font-size: 22px;
+            }
+            .about-section {
+                font-size: 20px;
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-image {
+                height: 40px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 250px;
+                align-items: center;
+            }
+            nav a {
+                font-size: 18px;
+                text-align: center;
+            }
+            .about-section {
+                font-size: 16px;
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link" title="Back to homepage">
+                    <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image" />
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <p>
+            The concept of this product was developed by Diana Martins as a response to a challenge posed during a university innovation course. With a strong interest in beauty products, Diana sought to create a solution that addresses common issues in skincare routines.
+        </p>
+        <p style="margin-top: 30px;">
+            The development process involved multiple stages, beginning with a comprehensive study of consumer trends and market gaps within the beauty industry. It was identified that many consumers face impractical skincare routines involving numerous separate products. There is a growing demand for personalized routines tailored to individual needs.
+        </p>
+        <p style="margin-top: 30px;">
+            Furthermore, increasing awareness of sustainability plays a significant role in consumer choices. This platform responds by recommending eco-friendly products based on user needs and by integrating multiple functionalities into a single device. This approach simplifies skincare routines, reduces the need for multiple purchases, and promotes a more sustainable beauty experience.
+        </p>
+        <p style="margin-top: 30px;">
+            Diana is also passionate about literature and wished to give the product a Portuguese name that would be easy to pronounce for speakers of other languages. After considering several personalities from Portuguese literature, she chose to name the product <strong>Ofélia</strong>, inspired by Fernando Pessoa's "Letters to Ofélia." This choice reflects a name that is deeply Portuguese yet accessible internationally, linking the product to a rich cultural heritage while emphasizing timeless elegance and connection.
+        </p>
+    </section>
+</body>
+</html>
