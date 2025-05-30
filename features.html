@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Ofélia Timeless</title>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5E4E0;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1728px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles - Copiados exatamente do index.html */
+        header {
+            background-color: #3B4D3B;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 100px;
+        }
+
+        .logo-link {
+            display: inline-block;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 125px;
+        }
+
+        nav a {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 40px;
+            color: #EADA85;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        /* Cor especial para "Features" */
+        nav a.active {
+            color: #A5BEB8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+        }
+
+        .feature-item {
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px;
+        }
+
+        .feature-item::before {
+            content: "♡";
+            margin-right: 10px;
+        }
+
+        /* Responsive Styles - Copiados exatamente do index.html */
+        @media (max-width: 1200px) {
+            .logo-image {
+                height: 80px;
+            }
+            
+            nav a {
+                font-size: 30px;
+            }
+            
+            .feature-item {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-image {
+                height: 60px;
+            }
+            
+            nav ul {
+                gap: 20px;
+            }
+            
+            nav a {
+                font-size: 24px;
+            }
+            
+            .feature-item {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - Estrutura exatamente igual ao index.html -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link" title="Voltar para a página inicial">
+                    <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="features.html" class="active">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                Cleaning and massage modes using high-frequency waves in the device, which can be combined with the use of cosmetics to enhance their effects;
+            </div>
+            
+            <div class="feature-item">
+                Personalized skincare and makeup product recommendations based on lifestyle and personal preferences, including a list of key ingredients that justify the recommendation;
+            </div>
+            
+            <div class="feature-item">
+                Skin diagnosis and monitoring through biometric sensors;
+            </div>
+            
+            <div class="feature-item">
+                Automatic adaptation of the device's operation according to the cosmetics used and the skin's condition, adjusting, for example, usage time or intensity;
+            </div>
+            
+            <div class="feature-item">
+                Eco-friendly product section on the platform for consumers who value sustainability.
+            </div>
+        </div>
+    </section>
+</body>
+</html>

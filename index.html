@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofélia Timeless</title>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5E4E0;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1728px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #3B4D3B;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-image {
+            /* Ajuste o tamanho conforme necessário */
+            height: 100px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 125px;
+        }
+
+        nav a {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 40px;
+            color: #EADA85;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 789px;
+        }
+
+        .hero-heading {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 70px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .hero-image {
+            flex: 0 0 auto;
+            width: 191px;
+            height: 738px;
+            position: relative;
+        }
+
+        /* Form Styles */
+        .email-form {
+            display: flex;
+            max-width: 557px;
+            margin-top: 40px;
+        }
+
+        .email-input {
+            flex-grow: 1;
+            padding: 15px 20px;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 24px;
+            background-color: #DCC6B2;
+            border: 1px solid #B0C3C1;
+            color: rgba(0, 0, 0, 0.55);
+            border-radius: 30px 0 0 30px;
+        }
+
+        .submit-button {
+            padding: 15px 20px;
+            width: 203px;
+            font-family: 'Emilys Candy', cursive;
+            font-size: 26px;
+            background-color: #3B4D3B;
+            border: 1px solid #B0C3C1;
+            color: #DCC6B2;
+            cursor: pointer;
+            border-radius: 0 30px 30px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .logo-image {
+                height: 80px;
+            }
+            
+            nav a {
+                font-size: 30px;
+            }
+            
+            .hero-heading {
+                font-size: 50px;
+            }
+            
+            .hero-description {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-image {
+                height: 60px;
+            }
+            
+            nav ul {
+                gap: 20px;
+            }
+            
+            nav a {
+                font-size: 24px;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                max-width: 100%;
+            }
+            
+            .hero-heading {
+                font-size: 40px;
+            }
+            
+            .hero-description {
+                font-size: 22px;
+            }
+            
+            .hero-image {
+                width: 150px;
+                height: 580px;
+            }
+            
+            .email-form {
+                flex-direction: column;
+            }
+            
+            .email-input, .submit-button {
+                width: 100%;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!-- LINHA 142: COLOQUE SUA IMAGEM DE LOGO AQUI -->
+                <img src="logo.svg" alt="Ofélia Timeless Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-heading">Your skin's future,<br>today.</h2>
+                    <p class="hero-description">
+                        Discover the future of skincare: a multifunctional electronic device that combines cleansing, massage, 
+                        biometric diagnosis and AI-powered personalized recommendations, all in one intuitive platform that 
+                        automatically adapts to your needs and prioritizes sustainability.
+                    </p>
+                    <form class="email-form">
+                        <input type="email" class="email-input" placeholder="Enter your email address">
+                        <button type="submit" class="submit-button">Get notified!</button>
+                    </form>
+                </div>
+                <div class="hero-image">
+                    <!-- LINHA 179: COLOQUE SEU SVG/IMAGEM DO PRODUTO AQUI -->
+                    <img src="product.svg" alt="Ofélia Timeless Device" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
